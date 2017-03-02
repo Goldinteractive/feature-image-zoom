@@ -10,6 +10,11 @@ class ImageZoom extends base.features.Feature {
     this.zooming.listen(this.node)
   }
 
+  destroy() {
+    super.destroy()
+    this.zooming = null
+  }
+
 }
 
 /**
